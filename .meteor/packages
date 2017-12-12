@@ -23,3 +23,5 @@ accounts-password
 react-meteor-data
 autopublish
 insecure
+kadira:blaze-layout
+kadira:flow-router

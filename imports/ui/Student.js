@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Students } from '../api/students.js';
+
 // Student component - represents a single todo item
 export default class Student extends Component {
   deleteThisStudent() {
@@ -7,9 +8,7 @@ export default class Student extends Component {
   }
  
   render() {
-    // Give students a different className when they are checked off,
-    // so that we can style them nicely in CSS
- 
+    // Give students a different className when they are checked off, 
     return (
       <li>
         <button className="delete" onClick={this.deleteThisStudent.bind(this)}>
