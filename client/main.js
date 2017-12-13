@@ -9,6 +9,7 @@ import { FlowRouter } from 'meteor/kadira:flow-router';
 
 
 import App from '/imports/ui/App.js';
+import Account from '/imports/ui/Account';
 import Student from '/imports/ui/Student';
 import Students from '/imports/ui/Students';
  
@@ -16,7 +17,7 @@ FlowRouter.route('/', {
     name: 'login',
     action() {
       mount(App, {
-        main: <a href='eleves'>Tout le monde</a>,
+        main: <Account/>,
       });
     },
   });
@@ -40,6 +41,14 @@ FlowRouter.route('/eleves', {
   });
 
 
+Tracker.autorun(function() {
+    if(Meteor.userId()) {
+      console.log(Meteor.userId());
+      FlowRouter.go('liste-eleves');
+    } else {
+      FlowRouter.go('login');
+    }
+});
+
 Meteor.startup(() => {
- 
 });

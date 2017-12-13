@@ -25,3 +25,4 @@ autopublish
 insecure
 kadira:blaze-layout
 kadira:flow-router
+gadicc:blaze-react-component

@@ -6,7 +6,6 @@ export default class App extends Component
 	{
 		return(
 			<div>
-				<h1>TITRE</h1>
 				<section>{ this.props.main }</section>
 			</div>
 		);

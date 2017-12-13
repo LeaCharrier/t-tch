@@ -44,7 +44,7 @@ class StudentsUI extends Component {
         <header>
           <h1>Liste des étudiants</h1>
 
-           <AccountsUIWrapper />
+          <AccountsUIWrapper />
 
           <form className="new-task" onSubmit={this.handleSubmit.bind(this)} >
             <input
