@@ -1,2 +1,2 @@
-# t-tch
-Application météor
+# Titch
+Application météor-react
